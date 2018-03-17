@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wild Coyote Foods</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="home.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-left-align">Wild Coyote Foods</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">About Us</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Contact</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Recipes</a> -->
+    <a href="locate.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Where to Buy</a>
+    <a href="product.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Products</a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-right">Home</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+ <div class="w3-half">
+  <div class="w3-content">
+    <div class="w3-card-4 w3-left">
+        <img src="aboutus.jpg" alt="The Wild Coyote Team" class="w3-image">
+    </div>
+  </div>
+</div>
+
+  <div class="w3-half">
+    <div class="w3-card w3-right">
+      <div class="w3-container w3-padding-16">
+        <h1 class="w3-center">Utah's Own</h1>
+        <p class="w3-text-grey">Ruth Jones founded Wild Coyote Foods (WCF) in 1996. The company leased a small, approximately 500 sq.ft., building from R.W. Jones in the old Industrial Park
+        as their first place of business. The first customer was Lin's Market in St. George.
+        The initial products consisted of Ranch Dressing and Salsa.<br><br>
+ The company continues to grow as
+you can now find our products in the Las Vegas market, in all Smiths, Albertsons, and the WinCo Stores,
+both in Las Vegas and in the Salt Lake area.
+The family recipes of Ruth Jones live on through the employees of Wild Coyote
+Foods and it is our hope that the company will continue to expand and open its flavors to more and
+more people.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-amber w3-padding-64 w3-center w3-opacity">  
+ <p>&copy 2018 Wild Coyote Foods LLC<br>
+    All Rights Reserved</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
